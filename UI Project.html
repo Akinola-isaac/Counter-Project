@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" type="text/css" href="UI project.css">
+	<link rel="stylesheet" type="text/css" href="Boots/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	
+	<title>project</title>
+</head>
+<body>
+	<center>
+		<div class="row" >
+		<div class="container-fluid">		
+		<div class="col-sm-5" id="body">
+				<div class="nav navbar-expand-sm bg-primary" style="width: 360px; height: 50px; margin-right: 150px;margin: 20px;background-color: green">		
+						<button onclick="menu()" style="border: none; background-color: black; color: white"> <i class="fa fa-bars"  id="menu">	</i>Menu	</button>
+				</div>
+
+
+
+				<div class="car" id="book" style="background-color: chocolate; width: 300px; height: 400px;">
+
+					<button onclick="hi()" class="motor" style="width: 200px;height: 30px background-color:grey; color: white;border: none;border-bottom: solid red; margin-top: 30px;" id="hi">	<i class="fa fa-car">	</i></button>
+
+					<button onclick=" motor()" class="motor" style="width: 200px;height: 10px background-color:grey; color: white;border: none;border-bottom: solid red;" id="hello">	<i class="fa fa-truck">	</i></button><br>
+
+					<button onclick="set()" class="motor" style="width: 200px;height: 30px background-color:grey; color: white;border: none;border-bottom: solid red;" id="xup">	<i class="fa fa-motorcycle">	</i></button>
+
+					<button onclick="jin()" class="motor" style="width: 200px;height: 30px background-color:grey; color: white;border: none;border-bottom: solid red;" id="fcbuk">	<i class="fa fa-bicycle">	</i></button>		
+				</div>
+
+
+
+
+					<div class="picture" style="width: 350px;  height: 400px; background-color: grey;" id="pic">	
+						<h3 style="color: white;">CAR</h3>
+						<center><input type="text" name="" style="padding: 26px 30px; border: none;"></center>
+						<button class="btn btn-success"><i class="fa fa-plus"></i></button>
+						<button class="btn btn-info">	<i class="fa fa-minus">	</i></button>
+						<button class="btn btn-danger">	<i class="fa fa-trash">	</i></button>
+							<button class="btn btn-light" onclick="back()" style="border-radius: 100%; margin-top: 150px;" id=""><i class="fa fa-plus"></i></button>
+
+
+					</div>
+
+					<div class="com" style="width: 350px;  height: 400px; background-color: grey;" id="com">	
+						<h3 style="color: white;">TRUCK</h3>
+						<center><input type="number" name=""  style="padding: 26px 30px; border: none;"></center>
+						<button class="btn btn-success"><i class="fa fa-plus"></i></button>
+						<button class="btn btn-info">	<i class="fa fa-minus">	</i></button>
+						<button class="btn btn-danger">	<i class="fa fa-trash">	</i></button>
+						<button class="btn btn-light" onclick="NEXT()" style="border-radius: 100%; margin-top: 150px;" id=""><i class="fa fa-plus"></i></button>
+
+
+
+					</div>
+
+					<div class="load" style="width: 350px;  height: 400px; background-color: grey;" id="load">	
+						<h3 style="color: white;">MOTORCYCLE</h3>
+						<center><input type="number" name=""  style="padding: 26px 30px; border: none;"></center>
+						<button class="btn btn-success"><i class="fa fa-plus"></i></button>
+						<button class="btn btn-info">	<i class="fa fa-minus">	</i></button>
+						<button class="btn btn-danger">	<i class="fa fa-trash">	</i></button>
+						<button class="btn btn-light" onclick="calc()" style="border-radius: 100%; margin-top: 150px;" id=""><i class="fa fa-plus"></i></button>
+
+
+					</div>
+
+					<div class="let" style="width: 350px;  height: 400px; background-color: grey;" id="let">	
+						<h3 style="color: white;">BICYCLE</h3>
+						<center><input type="number" name=""  style="padding: 26px 30px; border: none;"></center>
+						<button class="btn btn-success"><i class="fa fa-plus"></i></button>
+						<button class="btn btn-info">	<i class="fa fa-minus">	</i></button>
+						<button class="btn btn-danger">	<i class="fa fa-trash">	</i></button>
+						<button class="btn btn-light" onclick="select()" style="border-radius: 100%; margin-top: 150px;" id=""><i class="fa fa-plus"></i></button>
+
+
+					</div>
+					<!-- <div class="input" style="background-color: grey; width: 300px; height: 300px;" id="input">
+									<p>	item:</p>
+									<input type="	text" name="" placeholder="car" style="border: none">
+									<p>	description:</p>
+									<input type="	text" name="" placeholder="" style="border: none;"><br>
+									<button onclick="calln()" class="btn btn-success" id="call">Add</button>
+						</div> -->
+					<!-- <div class="container" style="background-color: grey; width: 300px; height: 300px; " id="container">	
+						<h4>	count n go </h4>
+						<button style="background-color: blue; border: none; color: white;"><i class="fa fa-car">	</i>	</button>
+						<input type="	" name="" placeholder="input what u want">
+						<button style="background-color: crimson; border: none; color: white;">	<i class="fa fa-trash">	</i></button>
+					</div>
+ -->
+		</div>
+		</div>
+		</div>
+
+
+</body>
+<script src="fecth/jquery.min.js"></script>
+
+<script>
+		function menu(){
+		$('#book').toggle(1000);
+		document.getElementById('book').style.display="none";
+		// document.getElementById('book').style.display="block";
+
+	}
+	function calln(){
+		$('#container').toggle(1000);
+		document.getElementById('container').style.display="block";
+	}
+	function hi(){
+		$('#pic').toggle(1000);
+		document.getElementById('pic').style.display="block";
+		document.getElementById('book').style.display="none";
+
+	}
+	function motor(){
+		$('#com').toggle(1000);
+		document.getElementById('com').style.display="block";
+		document.getElementById('book').style.display="none";
+
+	}
+
+	function set(){
+		$('#load').toggle(1000);
+		document.getElementById('load').style.display="block";
+		document.getElementById('book').style.display="none";
+	}
+	
+		function jin(){
+		$('#let').toggle(1000);
+		document.getElementById('let').style.display="block";
+		document.getElementById('book').style.display="none";
+	}
+	function back(){
+		$('#book').toggle(1000);
+		document.getElementById('pic').style.display="none";
+		document.getElementById('book').style.display="block";
+
+	}
+	function NEXT(){
+		$('#book').toggle(1000);
+		document.getElementById('book').style.display="block";
+		document.getElementById('com').style.display="none";
+	}
+	function calc(){
+		$('#book').toggle(1000);
+		document.getElementById('book').style.display="block";
+		document.getElementById('load').style.display="none";
+	}
+	function select(){
+		$('#book').toggle(1000);
+		document.getElementById('book').style.display="block";
+		document.getElementById('let').style.display="none";
+	}
+</script>
+
+</html>
